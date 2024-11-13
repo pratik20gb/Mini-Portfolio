@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P R A T I K</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+      :root {
+        --primary-color: #a3a3a3; /* Softer matte color */
+        --secondary-color: #3a3a3a;
+        --accent-color: #8b0000;
+        --text-color: #e0e0e0; /* Softer gray for matte */
+        --bg-color: #1f1f1f; /* Darker matte background */
+      }
+      html,body{
+        overflow: hidden;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background-color: var(--secondary-color);
+        padding: 20px 0;
+        height: 25vh;
+         
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 100px;
+        font-weight: bold;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        animation: fadeInLeft 1s ease-out;
+       
+      }
+
+      .logo-icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        fill: var(--primary-color);
+      }
+
+      .card-container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInRight 1s ease-out;
+        color: var(--text-color);
+      }
+
+      .card h2 {
+        margin-bottom: 15px;
+        color: var(--primary-color);
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #7c7c7c;
+      }
+
+      main {
+        background-color: var(--bg-color);
+        padding: 40px 0;
+        min-height: 60vh;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .project {
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInUp 1s ease-out;
+        color: var(--text-color);
+      }
+
+      .project img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      .project-links a {
+        color: var(--text-color);
+        text-decoration: none;
+      }
+
+      footer {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        text-align: center;
+        padding: 20px 0;
+        height: 10vh;
+      }
+
+      .social-links a {
+        color: var(--primary-color); /* Updated color */
+        margin: 0 10px;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        color: var(--accent-color);
+      }
+
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24">
+              <path d="M12 2L1 21h22L12 2zm0 3.516L20.297 19H3.703L12 5.516z" />
+            </svg>
+            Pratik Raj  
+            
+          </div>
+         
+          <div class="card-container">
+            <div class="card">
+              <h2>GitHub</h2>
+              <a href="https://github.com/pratik20gb" class="btn"
+                >View Profile</a
+              >
+            </div>
+            <div class="card">
+              <h2>Resume</h2>
+              <a
+                href="https://1drv.ms/w/c/dcc48d19276967ff/ETPFfRhUY-xBuuB_76K3igoBr_UHSNJjXRD6IgeFFsWYtw?e=6Agrbp"
+                class="btn"
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>restaura</h3>
+            <img
+              src="https://image.lexica.art/full_webp/8b88cfe7-09e9-43f8-87f1-557caff53fff"
+              alt="Project 1"
+            />
+            <p>
+              This is a beautifully designed website for Restaura, a fine dining
+              restaurant that offers a delightful culinary experience. React JS
+              + Animations
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/pratik20gb/restaura" class="btn"
+                >GitHub</a
+              >
+              <a href="https://restaura-pratik.vercel.app/" class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <h3>ExoApe</h3>
+            <img src="./assets/exoape.png" alt="Project 2" />
+            <p>
+              Web experience built with JavaScript and React.js, featuring
+              smooth animations using GSAP, Framer Motion, ScrollTrigger, and
+              Locomotive Scroll
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/pratik20gb/ExoApe" class="btn"
+                >GitHub</a
+              >
+              <a href="https://exo-ape-pratik.vercel.app/" class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <h3>Obys Agency</h3>
+            <img src="./assets/obysAgency.png" alt="Project 3" />
+            <p>
+              It demonstrates proficiency in HTML, Tailwind CSS, JavaScript, and
+              React.js, highlighting modern web development practices with
+              interactive features.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/pratik20gb/Obys-Agency" class="btn"
+                >GitHub</a
+              >
+              <a href="https://obys-agency-pratik.vercel.app/" class="btn"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pratik-raj-375034217/" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/pratik_solderet" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/pratik20gb" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:pratik20gb@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

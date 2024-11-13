@@ -5,7 +5,7 @@ This is my personal portfolio website, showcasing my work as a front-end develop
 
 ## Live Demo
 
-Check out the live version: [https://your-portfolio-link.com](https://your-portfolio-link.com)
+Check out the live version: https://pratik20gb.github.io/Mini-Portfolio/
 
 ## Features
 
